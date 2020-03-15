@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first html</title>
+</head>
+<body>
+<div>
+    <form action ="/choice" method="get" >
+        <fieldset>
+            {{range .Exporthumans}}
+            <label >{{.Fname}}</label><br>
+            <label >{{.Lname}}</label><br>
+            <label >{{.Id}}</label><br>
+            {{end}}
+            <input type="submit" value="Submit"><br><br>
+        </fieldset>
+    </form>
+
+</div>
+</body>
+</html>
